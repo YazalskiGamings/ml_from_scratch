@@ -3,7 +3,7 @@ library(readr)
 library(dplyr)
 library(scatterplot3d)
 
-fitness = read_csv("Desktop/Projects/ml algo datasets/Fitness/data.csv") #import fitness csv
+fitness = read_csv(".../data.csv") #import fitness csv
 
 cor(fitness) #Maxpulse -> pulse are correlated. That makes sense. Avoid Multicolinearity, use Maxpulse only
 fitness = fitness %>% select(-c(Pulse))

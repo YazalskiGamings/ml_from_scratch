@@ -1,1 +1,1 @@
-# Implementing ML Algorithims by Scratch
+# Implementing ML Algorithims From Scratch

@@ -13,7 +13,6 @@ hist(fitness$Calories) # Skewed, let's try to do a transformation, so we limit o
 fitness$Calories = log(fitness$Calories) # OLS is invariant -> so good to log transform to keep meaning
 
 Y = as.matrix(fitness$Duration) # Y = 169 x 1
-
 X = as.matrix(fitness[,-1]) # X = 169 x 2 
 X = cbind(intercept = rep(1, nrow(fitness)),X) #add intercept column 169 x 3
 N = nrow(fitness)
